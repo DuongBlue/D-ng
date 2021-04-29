@@ -1,0 +1,784 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	src:url("../font/UTM Avo.ttf");
+	font-family: UtmAvo;
+}
+@font-face{
+	src: url("../font/UTM AvoBold.ttf");
+	font-family: Avobold
+}
+@font-face{
+	src: url("../font/MTD Adventures Unlimited Sans.otf");
+	font-family: MTDsans
+}
+@font-face{
+	src: url("../font/MTD Adventures Unlimited Script Bold.otf");
+	font-family: MTDscript
+}
+.wrapper{
+	width: 100%;
+	background: #F9F6E4;
+	height: 100vh;
+	position: relative;
+}
+.header{
+	width: calc(20% - 60px);
+	height: 400px;
+	padding:30px;
+	position: absolute;
+	position: fixed;
+	top: 205px;
+	left: 0;
+	z-index: 15
+}
+.bottom{
+	width: 80%;
+}
+.bottom ul li{
+	width: 100%;
+	height: 50px;
+	border: 1px #789FB5 solid;
+	margin-top: 30px;
+	text-align: center;
+	margin-left: 10%;
+	list-style: none
+}
+.bottom ul li a{
+	color: #789FB5;
+	line-height: 50px;
+	font-size: 20px;
+	text-decoration: none;
+	display: block;
+	font-family: UtmAvo;
+	position: relative;
+}
+.bottom li:hover{
+	background: #789FB5;
+}
+.bottom li a:hover{
+	color: #F9F6E4;
+	font-family: AvoBold
+}
+.main{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	position: relative;
+}
+.top{
+	width: 80%;
+	position: relative;
+	top: 10px;
+	left: 60px;
+}
+.graphic a{
+	text-decoration: none;
+	font-family: MTDsans;
+	font-size: 200px;
+	color: #789FB5;
+	position: absolute;
+	top: 0;
+	left: 6px
+}
+.designer a{
+	text-decoration: none;
+	font-family: MTDscript;
+	font-size: 75px;
+	color: black;
+	position: absolute;
+	top: 92px;
+	left: 0px;
+	animation-name: designer;
+	animation-duration: 15s;
+	animation-iteration-count: infinite
+}
+@keyframes designer{
+	0%{
+		transform: scale(0)
+	}
+	35%{
+		transform: scale(1)
+	}
+	65%{
+		transform: scale(1)
+	}
+	100%{
+		transform: scale(0)
+	}
+}
+.portfolio{
+	width: 450px;
+	height: 450px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
+	position: absolute;
+	top: 55px;
+	left: 310px;
+}
+.text-1{
+	font-family: Avobold;
+	font-size: 148px;
+	line-height: 180px;
+	margin: 0 20px ;
+	color: #789FB5;
+	z-index: 9;
+	animation-name: portfolio;
+	animation-duration: 4s;
+	animation-iteration-count: infinite
+}
+.text-2{
+	font-family: Avobold;
+	font-size: 148px;
+	line-height: 180px;
+	margin: 0 20px ;
+	color: #789FB5;
+	z-index: 9;
+	animation-name: portfolio;
+	animation-duration: 4.5s;
+	animation-iteration-count: infinite
+}
+.text-3{
+	font-family: Avobold;
+	font-size: 148px;
+	line-height: 180px;
+	margin: 0 20px ;
+	color: #789FB5;
+	z-index: 9;
+	animation-name: portfolio;
+	animation-duration: 5s;
+	animation-iteration-count: infinite
+}
+.text{
+	font-family: Avobold;
+	font-size: 148px;
+	line-height: 180px;
+	margin: 0 20px ;
+	color: #789FB5;
+	z-index: 8;
+}
+.stroke{
+	-webkit-text-stroke:1px #789FB5;
+  	-webkit-text-fill-color:transparent;
+	z-index: 8
+	position: absolute;
+	top: 65px;
+	left: 300px;
+}
+@keyframes portfolio{
+	0%{
+		transform: translate(0px)
+	}
+	25%{
+		transform: translate(-10px,10px)
+	}
+	50%{
+		transform: translate(-10px,10px)
+	}
+	75%{
+		transform: translate(-10px,10px)
+	}
+	100%{
+		transform: translate(0px)
+	}
+}
+.avt img{
+	width: 600px;
+	position: absolute;
+	left: 600px;
+	bottom: 0px;
+	z-index: 10;
+}
+.outer{
+	width: 320px;
+	height: 320px;
+	position: absolute;
+	right: 60px;
+	top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.hvuong{
+	width: 80px;
+	height: 80px;
+	background: #D5B8D8;
+	animation-name: hvuong;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes hvuong{
+	0%{
+		transform: rotate(0deg) scale(1)
+	}
+	20%{
+		transform: rotate(45deg) scale(0.3)
+	}
+	60%{
+		border-radius: 50%;
+	}
+	80%{
+		transform: rotate(45deg) scale(0.3)
+	}
+	100%{
+		transform: rotate(0deg) scale(1)
+	}
+}
+.gach{
+	width: 100px;
+	height: 20px;
+	background: #D5B8D8;
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	animation-name: gach;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes gach{
+	0%{
+		width: 100px;
+	}
+	100%{
+		width: 800px;
+	}
+}
+.ten{
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	bottom: 100px;
+	right: 40px;
+	font-family: AvoBold;
+	font-size: 70px;
+	color: #789FB5;
+}
+
+.session2{
+	width: 100%;
+	height: 100vh;
+	background: #F9F6E4;
+	position: relative;
+}
+.duong-info{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: -30px;
+	left: 50px;
+	position: relative;
+}
+.duong{
+	font-family: MTDsans;
+	font-size: 270px;
+	color: #789FB5;
+	position: absolute;
+	top: 0;
+	left: 5px;
+}
+.info{
+	font-family: MTDscript;
+	font-size: 60px;
+	color: black;
+	position: absolute;
+	top: 135px;
+	left: 5px;
+	animation-name: designer;
+	animation-duration: 15s;
+	animation-iteration-count: infinite
+}
+.xinchao{
+	width: 70%;
+	height: 200px;
+	position: absolute;
+	top: 40px;
+	left: 400px;
+}
+.xinchao h1{
+	font-family: AvoBold;
+	font-size: 64px;
+	color: #789FB5;
+}
+.xinchao p{
+	font-family: UtmAvo;
+	font-size: 18px;
+	color: #789FB5;
+}
+.phan-mem{
+	width: 350px;
+	height: 400px;
+	position: absolute;
+	bottom: 30px;
+	left: 400px
+}
+.phan-mem h2{
+	font-family: AvoBold;
+	font-size: 32px;
+	color: #789FB5;
+}
+.ai{
+	width: 300px;
+	height: 40px;
+	border: 2px solid #789FB5;
+	margin-top: 15px;
+	display: flex;
+}
+.ai img{
+	width: 30px;
+	padding: 5px;
+}
+.ai-skill{
+	width: 200px;
+	height: 30px;
+	background: #789FB5;
+	margin-top: 5px;
+	animation-name: ai;
+	animation-duration: 15s;
+	animation-iteration-count: infinite
+}
+@keyframes ai{
+	0%{
+		width: 0px;
+	}
+	40%{
+		width: 200px;
+	}
+	60%{
+		width: 200px;
+	}
+	100%{
+		width: 0px;
+	}
+}
+.ps{
+	width: 300px;
+	height: 40px;
+	border: 2px solid #789FB5;
+	margin-top: 20px;
+	display: flex;
+}
+.ps img{
+	width: 30px;
+	padding: 5px;
+}
+.ps-skill{
+	width: 160px;
+	height: 30px;
+	background: #789FB5;
+	margin-top: 5px;
+	animation-name: ps;
+	animation-duration: 15s;
+	animation-iteration-count: infinite
+}
+@keyframes ps{
+	0%{
+		width: 0px;
+	}
+	40%{
+		width: 160px;
+	}
+	60%{
+		width: 160px;
+	}
+	100%{
+		width: 0px;
+	}
+}
+.id{
+	width: 300px;
+	height: 40px;
+	border: 2px solid #789FB5;
+	margin-top: 20px;
+	display: flex;
+}
+.id img{
+	width: 30px;
+	padding: 5px;
+}
+.id-skill{
+	width: 160px;
+	height:30px;
+	background: #789FB5;
+	margin-top: 5px;
+	animation-name: id;
+	animation-duration: 15s;
+	animation-iteration-count: infinite
+}
+@keyframes id{
+	0%{
+		width: 0px;
+	}
+	40%{
+		width: 160px;
+	}
+	60%{
+		width: 160px;
+	}
+	100%{
+		width: 0px;
+	}
+}
+.dw{
+	width: 300px;
+	height: 40px;
+	border: 2px solid #789FB5;
+	margin-top: 20px;
+	display: flex;
+}
+.dw img{
+	width: 30px;
+	padding: 5px;
+}
+.dw-skill{
+	width: 100px;
+	height: 30px;
+	background: #789FB5;
+	margin-top: 5px;
+	animation-name: dw;
+	animation-duration: 15s;
+	animation-iteration-count: infinite
+}
+@keyframes dw{
+	0%{
+		width: 0px;
+	}
+	40%{
+		width: 100px;
+	}
+	60%{
+		width: 100px;
+	}
+	100%{
+		width: 0px;
+	}
+}
+.cdr{
+	width: 300px;
+	height: 40px;
+	border: 2px solid #789FB5;
+	margin-top: 20px;
+	display: flex;
+}
+.cdr img{
+	width: 30px;
+	padding: 5px;
+}
+.cdr-skill{
+	width: 220px;
+	height: 30px;
+	background: #789FB5;
+	margin-top: 5px;
+	animation-name: cdr;
+	animation-duration: 15s;
+	animation-iteration-count: infinite
+}
+@keyframes cdr{
+	0%{
+		width: 0px;
+	}
+	40%{
+		width: 220px;
+	}
+	60%{
+		width: 220px;
+	}
+	100%{
+		width: 0px;
+	}
+}
+.kinh-nghiem{
+	width: 350px;
+	height: 400px;
+	position: absolute;
+	bottom: 30px;
+	left: 750px
+}
+.kinh-nghiem h2{
+	font-family: AvoBold;
+	font-size: 32px;
+	color: #789FB5;
+}
+.kinh-nghiem h3{
+	font-family: AvoBold;
+	font-size: 20px;
+	color: #789FB5;
+}
+.kinh-nghiem p{
+	font-family: UtmAvo;
+	font-size: 16px;
+	color: #789FB5;
+}
+.work{
+	margin-top: 25px;
+}
+.hoc-van{
+	width: 350px;
+	height: 400px;
+	position: absolute;
+	bottom: 30px;
+	left: 1100px
+}
+.hoc-van h2{
+	font-family: AvoBold;
+	font-size: 32px;
+	color: #789FB5;
+}
+.hoc-van h3{
+	font-family: AvoBold;
+	font-size: 20px;
+	color: #789FB5;
+}
+.hoc-van p{
+	font-family: UtmAvo;
+	font-size: 16px;
+	color: #789FB5;
+}
+.study{
+	margin-top: 25px;
+}
+.session3{
+	width: 100%;
+	height: 100vh;
+	background: #F9F6E4;
+}
+.duong-port{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: -30px;
+	left: 50px;
+	position: relative;
+}
+.duong{
+	font-family: MTDsans;
+	font-size: 270px;
+	color: #789FB5;
+	position: absolute;
+	top: 0;
+	left: 5px;
+}
+.port{
+	font-family: MTDscript;
+	font-size: 80px;
+	color: black;
+	position: absolute;
+	top: 125px;
+	left: 5px;
+	animation-name: designer;
+	animation-duration: 15s;
+	animation-iteration-count: infinite
+}
+.session3{
+	width: 100%;
+	height: 100vh;
+	background: #F9F6E4;
+	position: relative;
+	transition-duration: 2s
+}
+.container{
+	width: 75%;
+	height: 520px;
+	position: absolute;
+	top: 50px;
+	left: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.san-pham{
+	position: relative;
+}
+.san-pham h3{
+	width: 280px;
+	height:500px;
+	background: #789FB5;
+	margin: 20px;
+	padding: 10px 20px;
+	font-family: AvoBold;
+	font-size: 32px;
+	color: #F9F6E4;
+}
+.tdp{
+	width: 200px;
+	position: absolute;
+	top: 130px;
+	left: 80px;
+	transition-duration: 2s
+}
+.tdp:hover{
+	transform: scale(1.5)
+}
+.yup{
+	width: 200px;
+	position: absolute;
+	top: 280px;
+	left: 80px;
+	transition-duration: 2s
+}
+.yup:hover{
+	transform: scale(1.3)
+}
+.duck{
+	width: 200px;
+	position: absolute;
+	top: 100px;
+	left: 80px;
+	transition-duration: 2s
+}
+.duck:hover{
+	transform: scale(1.5)
+}
+.pill{
+	width: 200px;
+	position: absolute;
+	top: 220px;
+	left: 80px;
+	transition-duration: 2s;
+}
+.pill:hover{
+	transform: scale(1.5)
+}
+.chick{
+	width: 200px;
+	position: absolute;
+	top: 350px;
+	left: 80px;
+	transition-duration: 2s;
+}
+.chick:hover{
+	transform: scale(1.4)
+}
+.lampard{
+	width: 230px;
+	position: absolute;
+	top: 150px;
+	left: 60px;
+	transition-duration: 2s;
+}
+.lampard:hover{
+	transform: scale(1.3)
+}
+.session4{
+	width: 100%;
+	height: 100vh;
+	background: #F9F6E4;
+	position: relative;
+}
+.cont-2{
+	width: 75%;
+	height: 520px;
+	position: absolute;
+	top: 50px;
+	left: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.smile{
+	width: 240px;
+	position: absolute;
+	top: 110px;
+	left: 60px;
+	transition-duration: 2s
+}
+.smile:hover{
+	transform: scale(1.3)
+}
+.bus{
+	width: 240px;
+	position: absolute;
+	top: 320px;
+	left: 60px;
+	transition-duration: 2s
+}
+.bus:hover{
+	transform: scale(1.3)
+}
+.standeee{
+	width: 230px;
+	position: absolute;
+	top: 120px;
+	left: 65px;
+	transition-duration: 2s
+}
+.standeee:hover{
+	transform: scale(1.2)
+}
+.den{
+	width: 200px;
+	position: absolute;
+	top: 100px;
+	left: 80px;
+	transition-duration: 2s
+}
+.den:hover{
+	transform: scale(1.1)
+}
+.trang{
+	width: 200px;
+	position: absolute;
+	top: 320px;
+	left: 80px;
+	transition-duration: 2s
+}
+.trang:hover{
+	transform: scale(1.1)
+}
+.session5{
+	width: 100%;
+	height: 100vh;
+	background: #F9F6E4;
+	position: relative;
+	text-align: center
+}
+.duong-contact{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: -30px;
+	left: 50px;
+	position: relative;
+}
+.duong{
+	font-family: MTDsans;
+	font-size: 270px;
+	color: #789FB5;
+	position: absolute;
+	top: 0;
+	left: 5px;
+}
+.contact{
+	font-family: MTDscript;
+	font-size: 90px;
+	color: black;
+	position: absolute;
+	top: 125px;
+	left: 5px;
+	animation-name: designer;
+	animation-duration: 15s;
+	animation-iteration-count: infinite
+}
+.session5 p{
+	font-family: UtmAvo;
+	font-size: 20px;
+	color: #789FB5;
+}
+.session5 img{
+	width: 50px;
+}
+.icon{
+	margin-top: 30px;
+}
+.dt{
+	position: absolute;
+	top: 80px;
+	left: 700px;
+}
